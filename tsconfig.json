@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "lib/",
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "target": "es5",
+    "declaration": true
+  },
+  "files": [
+    "typings/main.d.ts",
+    "src/index.ts"
+  ]
+}

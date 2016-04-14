@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "chai": "registry:npm/chai#3.5.0+20160402210230"
+  },
+  "ambientDependencies": {
+    "mocha": "registry:dt/mocha#2.2.5+20160317120654",
+    "mocha-node": "registry:dt/mocha-node#2.2.5+20160317120654",
+    "node": "registry:dt/node#4.0.0+20160412142033"
+  }
+}

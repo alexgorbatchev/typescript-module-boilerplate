@@ -1,0 +1,23 @@
+{
+  "name": "typescript-module-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha --opts tests/mocha.opts tests/**/*-test.ts",
+    "build": "rm -rf lib && tsc"
+  },
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "lib/"
+  ],
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "mocha-clean": "^1.0.0",
+    "ts-node": "^0.7.2",
+    "typescript": "^1.8.10",
+    "typings": "^0.7.12"
+  }
+}
