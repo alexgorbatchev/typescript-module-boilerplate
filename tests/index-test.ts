@@ -1,9 +1,9 @@
-import obj from '../src/index';
+import obj from "../src/index";
 
-describe('obj', () => {
-  it('works', () => true);
+describe("obj", () => {
+  it("works", () => true);
 
-  it('does not work', () => {
-    throw new Error('oh no!');
+  it("does not work", () => {
+    throw new Error("oh no!");
   });
 });

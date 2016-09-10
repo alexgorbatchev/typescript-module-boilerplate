@@ -5,11 +5,11 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noEmitOnError": true,
-    "target": "es5",
+    "target": "es6",
     "declaration": true
   },
   "files": [
-    "typings/main.d.ts",
+    "typings/index.d.ts",
     "src/index.ts"
   ]
 }
