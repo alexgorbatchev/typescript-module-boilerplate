@@ -24,7 +24,7 @@ npm test
 Use TypeScript straight up
 
 ```
-rm -rf lib && tsc
+rm -rf lib && tsc -p .
 ```
 
 or a convenience shortcut
