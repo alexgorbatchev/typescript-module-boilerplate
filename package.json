@@ -13,7 +13,6 @@
     "lib/"
   ],
   "devDependencies": {
-    "babel": "^6.5.2",
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
     "mocha-clean": "^1.0.0",
