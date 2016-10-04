@@ -6,10 +6,18 @@
     "moduleResolution": "node",
     "noEmitOnError": true,
     "target": "es6",
-    "declaration": true
+    "declaration": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "rootDir": "."
   },
-  "files": [
-    "typings/index.d.ts",
-    "src/index.ts"
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "node_modules/@types/mocha/index.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib"
   ]
 }

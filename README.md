@@ -1,6 +1,6 @@
 # typescript-module-boilerplate
 
-This is a boilerplate for a TypeScript NPM module.
+This is a boilerplate for a TypeScript 2.x NPM module.
 
 ## Usage
 
