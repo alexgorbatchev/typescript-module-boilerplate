@@ -13,8 +13,7 @@
   },
   "include": [
     "src/**/*.ts",
-    "tests/**/*.ts",
-    "node_modules/@types/mocha/index.d.ts"
+    "tests/**/*.ts"
   ],
   "exclude": [
     "node_modules",
