@@ -1,10 +1,12 @@
-import { expect } from "chai";
-import obj from "../src/index";
+import { expect } from 'chai';
+import obj from '../src/index';
+
+const { describe, it } = global;
 
 describe("obj", () => {
-  it("works", () => true);
+  it('works', () => expect(obj).to.be.ok);
 
-  it("does not work", () => {
-    throw new Error("oh no!");
+  it('does not work', () => {
+      throw new Error('oh no!');
   });
 });

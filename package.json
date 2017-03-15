@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "scripts": {
     "test": "mocha --opts tests/mocha.opts tests/**/*-test.ts",
+    "lint": "eslint 'src/**/*.ts' 'tests/**/*.ts'",
     "build": "rm -rf lib && tsc -p . && rm -fr lib/tests && mv lib/src/** lib/ && rm -fr lib/src",
     "prepublish": "npm run build"
   },
@@ -14,10 +15,14 @@
   ],
   "devDependencies": {
     "@types/chai": "^3.4.34",
-    "@types/mocha": "^2.2.32",
+    "@types/mocha": "^2.2.40",
     "@types/node": "^7.0.0",
     "chai": "^3.5.0",
     "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
     "eslint-plugin-typescript": "^0.1.0",
     "mocha": "^3.1.0",
     "mocha-clean": "^1.0.0",

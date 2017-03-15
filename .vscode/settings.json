@@ -5,5 +5,9 @@
     "**/.DS_Store": true,
     "lib": true,
     "node_modules": true
-  }
+  },
+  "eslint.enable": true,
+  "eslint.validate": [
+    "typescript"
+  ]
 }

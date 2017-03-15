@@ -1,14 +1,34 @@
 {
-	"parserOptions": {
-		"sourceType": "module"
-	},
-	"parser": "typescript-eslint-parser",
-	"plugins": [
-		"typescript"
-	],
-	"env": {
-		"node": true,
-		"es6": true
-	},
-	"extends": "eslint:recommended"
+  "parser": "typescript-eslint-parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": [
+    "typescript"
+  ],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:import/errors"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": true,
+      "./scripts/lint/typescript-resolver.js": true
+    },
+    "import/parsers": {
+      "typescript-eslint-parser": [".ts", ".tsx"]
+    }
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "no-var": "error",
+    "prefer-template": "error",
+    "import/extensions": "off"
+  }
 }

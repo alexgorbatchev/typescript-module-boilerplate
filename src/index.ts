@@ -1,5 +1,6 @@
-export default (options: Object): Function => {
-  return function () {
-    console.log(unknownVariable);
+export default function func(options: Object): Function {
+  return function fooBar() {
+    const foo = 1;
+    return foo;
   };
-};
+}
