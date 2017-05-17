@@ -28,6 +28,6 @@
     "mocha-clean": "^1.0.0",
     "ts-node": "^2.0.0",
     "typescript": "^2.2.1",
-    "typescript-eslint-parser": "^2.0.0"
+    "typescript-eslint-parser": "^3.0.0"
   }
 }
