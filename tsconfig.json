@@ -5,18 +5,16 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noEmitOnError": true,
-    "target": "es6",
+    "target": "es5",
     "declaration": true,
     "noImplicitAny": true,
     "removeComments": true,
-    "rootDir": "."
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "pretty": true
   },
   "include": [
     "src/**/*.ts",
     "tests/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "lib"
   ]
 }
