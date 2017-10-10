@@ -1,34 +1,26 @@
 {
   "parser": "typescript-eslint-parser",
-  "parserOptions": {
-    "sourceType": "module"
+  "extends": ["airbnb", "prettier", "typescript", "typescript/react", "typescript/prettier"],
+  "plugins": ["typescript"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "prettier/prettier": "error",
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["webpack.config.js", "tests/**/*.{ts,tsx}"]
+      }
+    ],
+    "require-jsdoc": 0
   },
-  "plugins": [
-    "typescript"
-  ],
-  "env": {
-    "node": true,
-    "es6": true
-  },
-  "extends": [
-    "airbnb",
-    "plugin:import/errors"
-  ],
   "settings": {
     "import/resolver": {
       "node": true,
-      "./scripts/lint/typescript-resolver.js": true
+      "typescript": true
     },
     "import/parsers": {
-      "typescript-eslint-parser": [".ts", ".tsx"]
+      "typescript-eslint-parser": [".ts", ".tsx", { "comment": true }]
     }
-  },
-  "rules": {
-    "indent": ["error", 2],
-    "prefer-arrow-callback": "error",
-    "prefer-const": "error",
-    "no-var": "error",
-    "prefer-template": "error",
-    "import/extensions": "off"
   }
 }

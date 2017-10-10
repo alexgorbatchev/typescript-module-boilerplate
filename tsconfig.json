@@ -7,14 +7,10 @@
     "noEmitOnError": true,
     "target": "es5",
     "declaration": true,
+    "removeComments": false,
     "noImplicitAny": true,
-    "removeComments": true,
     "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
     "pretty": true
-  },
-  "include": [
-    "src/**/*.ts",
-    "tests/**/*.ts"
-  ]
+  }
 }
