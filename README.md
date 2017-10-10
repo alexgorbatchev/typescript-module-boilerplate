@@ -10,44 +10,29 @@ cd typescript-module-boilerplate
 npm install
 ```
 
-## Testing
+Rename and edit files as needed.
 
-Uses Mocha, just do it!
-
-```
-npm test
-```
-
-## Linting
-
-Full [ESLint](http://eslint.org/) support.
+## Features
 
 ![](./screenshot-eslint.png)
 
-* Integrates with Visual Studio Code.
-* TypeScript support via [typescript-eslint-parser](https://github.com/eslint/typescript-eslint-parser).
-* Bundled with [AirBNB style guide](https://github.com/airbnb/javascript).
+* Linting via [ESLint](http://eslint.org/).
+  * Run manually via `npm run lint`.
+  * Integrates with Visual Studio Code via [vscode-eslint](https://github.com/Microsoft/vscode-eslint/).
+  * Uses [AirBNB ESLint plugin](https://github.com/airbnb/javascript).
+  * TypeScript support via [typescript-eslint-parser](https://github.com/eslint/typescript-eslint-parser).
+* Formatting via [Prettier](https://github.com/prettier/prettier).
+  * Run manually via `npm run format`.
+  * Integrates well with Visual Studio Code via [prettier-vscode](https://github.com/prettier/prettier-vscode).
+    * Set `"editor.formatOnSave": true` to automatically format files on save.
 * `import/export` statements are verified via [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).
 
-A few lint issues are left in the boilerplate intentionally for example purposes.
+## NPM Script Commands
 
-```
-npm run lint
-```
-
-## Building
-
-Use TypeScript straight up
-
-```
-rm -rf lib && tsc -p .
-```
-
-or a convenience shortcut
-
-```
-npm run build
-```
+* `npm run test` -- Runs tests, lint and build.
+* `npm run lint` -- Runs ESLint.
+* `npm run format` -- Reformats all of the `.ts` and `.tsx` files with Prettier.
+* `npm run build` -- Regenerates `lib` folder that gets included into NPM module.
 
 ## License
 
