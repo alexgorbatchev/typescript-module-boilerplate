@@ -34,7 +34,7 @@
     "mocha": "^5.0.0",
     "mocha-clean": "^1.0.0",
     "prettier": "^1.7.0",
-    "ts-node": "^4.0.0",
+    "ts-node": "^5.0.0",
     "typescript": "^2.5.3",
     "typescript-eslint-parser": "^13.0.0"
   }
