@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "lib/",
+    "outDir": "dist/",
     "sourceMap": true,
     "module": "commonjs",
     "moduleResolution": "node",
@@ -12,5 +12,6 @@
     "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
     "pretty": true
-  }
+  },
+  "include": ["src"]
 }

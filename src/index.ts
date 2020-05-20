@@ -1,11 +1,13 @@
-export default function func(options: Object): Function {
-  return function fooBar() {
-    let foo = 1;
+interface Params {
+  isValid: boolean;
+}
 
-    if (options) {
-      foo = 2;
-    }
+export default function func({ isValid }: Params) {
+  let foo = 1;
 
-    return foo;
-  };
+  if (isValid) {
+    foo = 2;
+  }
+
+  return foo;
 }

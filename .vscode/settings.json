@@ -1,13 +1,16 @@
 {
+  "editor.formatOnSave": true,
+
+  "terminal.integrated.shell.osx": "/bin/zsh",
+
   "typescript.tsdk": "./node_modules/typescript/lib",
+
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
-    "lib": true,
     "node_modules": true
   },
+
   "eslint.enable": true,
-  "eslint.validate": [
-    "typescript"
-  ]
+  "eslint.validate": ["typescript"]
 }
