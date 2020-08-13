@@ -2,7 +2,7 @@ interface Params {
   isValid: boolean;
 }
 
-export default function func({ isValid }: Params) {
+export default function func({ isValid }: Params): number {
   let foo = 1;
 
   if (isValid) {
