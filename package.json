@@ -31,6 +31,7 @@
     "dist/"
   ],
   "devDependencies": {
+    "@types/hdkey": "^0.7.1",
     "@types/jest": "^25.2.3",
     "@types/node": "^14.0.4",
     "@typescript-eslint/eslint-plugin": "^3.0.0",
@@ -51,5 +52,11 @@
     "ts-jest": "^26.0.0",
     "ts-node": "^8.10.1",
     "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "@ainblockchain/ain-js": "^1.0.2",
+    "bip39": "^3.0.2",
+    "firebase": "^7.19.0",
+    "hdkey": "^2.0.1"
   }
 }

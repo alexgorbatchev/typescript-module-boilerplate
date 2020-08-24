@@ -1,13 +1,14 @@
-interface Params {
-  isValid: boolean;
-}
+import firebase from './common/firebase';
+import Wallet from './common/wallet';
+import { NetworkType } from './common/types';
 
-export default function func({ isValid }: Params): number {
-  let foo = 1;
+export default class Connect {
+  public database: firebase.database.Database;
+  public wallet: Wallet;
 
-  if (isValid) {
-    foo = 2;
+  constructor(mnemonic: string, network: NetworkType) {
+    const providerUrl =
+      network === NetworkType.MAINNET ? 'http://node.ainetwork.ai:8080' : 'http://node.ainetwork.ai:8080';
+    this.wallet = new Wallet(mnemonic, providerUrl);
   }
-
-  return foo;
 }
