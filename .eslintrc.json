@@ -1,20 +1,73 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["typescript", "import"],
+  "plugins": ["typescript", "import", "prettier"],
   "extends": [
-    "airbnb",
     "prettier",
+    "airbnb",
     "typescript",
-    "typescript/prettier",
+    "typescript/react",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript"
   ],
   "rules": {
+    "no-irregular-whitespace": ["error", { "skipComments": true }],
+    "no-console": "error",
+    "require-await": "error",
+
+    "no-shadow": "off",
+    "no-return-await": "off",
+    "no-await-in-loop": "off",
+    "no-restricted-syntax": "off",
+    "no-loop-func": "off",
+    "no-useless-constructor": "off",
+    "no-restricted-globals": "off",
+    "symbol-description": "off",
+    "class-methods-use-this": "off",
+    "no-labels": "off",
+    "no-continue": "off",
+    "no-extra-label": "off",
+    "consistent-return": "off",
+    "no-unneeded-ternary": "off",
+    "max-classes-per-file": "off",
+    "no-multi-str": "off",
+    "operator-assignment": "off",
+    "spaced-comment": "off",
+    "no-use-before-define": "off",
+    "camelcase": "off",
+
     "prettier/prettier": "error",
+
     "import/no-unresolved": "error",
     "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+
+    "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
+    "react/button-has-type": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-boolean-value": "off",
+    "react/destructuring-assignment": "off",
+    "react/display-name": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/jsx-curly-newline": "off",
+    "react/jsx-indent": "off",
+    "react/no-children-prop": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "react/no-unused-prop-types": "off",
+    "react/no-unescaped-entities": "off",
+
     "require-jsdoc": "off",
-    "@typescript-eslint/explicit-function-return-type": "off"
+
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-empty-interface": "off"
   }
 }

@@ -1,12 +1,17 @@
 {
   "parser": "typescript",
   "singleQuote": true,
-  "trailingComma": "es5",
+  "trailingComma": "all",
   "printWidth": 120,
+  "arrowParens": "avoid",
   "overrides": [
     {
       "files": [".*", "*.json"],
       "options": { "parser": "json" }
+    },
+    {
+      "files": ["*.js"],
+      "options": { "parser": "typescript" }
     }
   ]
 }
