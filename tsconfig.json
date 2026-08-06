@@ -1,17 +1,15 @@
 {
   "compilerOptions": {
-    "outDir": "dist/",
-    "sourceMap": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "target": "es5",
-    "declaration": true,
-    "removeComments": false,
-    "noImplicitAny": true,
-    "forceConsistentCasingInFileNames": true,
-    "noUnusedLocals": true,
-    "pretty": true
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["node", "bun"]
   },
-  "include": ["src"]
+  "include": ["src/**/*.ts"]
 }
